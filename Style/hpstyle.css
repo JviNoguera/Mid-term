@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*,
+html,
+body {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: roboto;
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+body {
+  background-color: #F2F4FC;
+}
+
+header {
+  margin: 30px 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.ul-flex {
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-content: center;
+}
+
+.buttonStandard {
+background-color: #072AC8;
+color:  #f2f4fc;
+padding: 10px 20px;
+width: 120px;
+height: 40px;
+cursor: pointer;
+box-shadow: none;
+outline: none;
+border-style: none
+}
+
+.sectionHero {
+    margin: 30px 120px;
+}
+
+.containerHero-flex {
+    display: flex;
+    width: 76.4%;
+    height:max-content;
+    align-items:center;
+    justify-content: space-around;
+
+}
+.heroText, .heroImages {
+    width: 50%;
+}
+
+.heroImagesBackground {
+    position: relative;
+    background-image: url("/Resources/hero-section/hero-image.png");
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    height: 520px;
+    width: 420px;
+}
+
+.heroImages img {
+    width: 62%;
+    height: auto;
+    padding: none;
+  }
+
+.heroImages img.creditImg {
+    position: absolute;
+    top: 30px;
+    left: -60px;
+  }
+  
+  .heroImages img.emojiImg {
+    position: absolute;
+    bottom: -39px;
+    right: -55px;
+  }
+
+  .clientsBar {
+    margin: 30px 120px;
+
+  }
+  .flexClients {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  .clientsBar img {
+    filter: grayscale(100%);
+    
+
+  }
