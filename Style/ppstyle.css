@@ -1,15 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *,
 html,
 body {
-  box-sizing: border-box;
-  padding: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24;
+    font-weight: medium;
 }
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 50;
+    font-weight: bold;
+}
+h3 {
+  font-size: 40;
+  font-weight: bold;
+}
+h4 {
+  font-size: 24;
+  font-weight: bold;
+}
+
 
 body {
   background-color: #F2F4FC;
 }
 
 header {
+  width: 80%;
   margin: 30px 120px;
   display: flex;
   flex-direction: row;
@@ -25,13 +49,145 @@ header {
 }
 
 .buttonStandard {
-background-color: #072AC8;
-color:  #f2f4fc;
-padding: 10px 20px;
-width: 120px;
-height: 40px;
-cursor: pointer;
-box-shadow: none;
-outline: none;
-border-style: none
+  background-color: #072AC8;
+  color:  #f2f4fc;
+  padding: 10px 20px;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  border-style: none
 }
+
+/* arriba poner seccion anterior */
+
+.sectionOtherProjects {
+  margin: 30px 120px;
+  margin-top: 14%;
+  width: 80%
+}
+
+.containerOtherPojects-flex {
+  display: flex;
+  width: 100%;
+  height:max-content;
+  align-items:center;
+  justify-content: space-between;
+  margin-top: 5%;
+}
+
+.orbit, .purify, .cryptopie {
+  position: relative;
+  background-color: white;
+  width: 260px;
+  height: 350px;
+  box-shadow: inset;
+}
+.orbit {
+  background-image: url(/Resources/projects-section/4.jpg);
+  background-size: 111%; 
+  background-repeat: no-repeat; 
+  background-position: top; 
+
+
+}
+.purify {
+  background-image: url(/Resources/projects-section/5.jpg);
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: top; 
+  
+}
+.cryptopie {
+  background-image: url(/Resources/projects-section/6.jpg);
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: top; 
+}
+
+.orbit h4,
+.purify h4,
+.cryptopie h4 {
+  position: absolute;
+  top: 55%; 
+  transform: translateY(-50%); /* ajuste posición con respecto al eje y para que el bloque esté centrado */
+  left: 20px;
+}
+
+.orbit p,
+.purify p,
+.cryptopie p {
+  font-size: 20;
+  position: absolute;
+  top: 65%; 
+  transform: translateY(-50%); /* ajuste posición con respecto al eje y para que el bloque esté centrado */
+  left: 20px;
+}
+
+.orbit a,
+.purify a,
+.cryptopie a {
+  position: absolute;
+  bottom: 8%; 
+  left: 20px;
+}
+/*  */
+.sectionSubscribe {
+  margin-top: 12%;
+  margin-left: 2.5%;  /* aqui hay que revisar esto, yo deberia poder centrar todo esta seciton y tengo que hacer un ajuste en el margen */
+  width: 95%;
+  background-color: #ffc600;
+  height: 400px;
+  justify-content: center;
+}
+
+.containerSubscribe-flex {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  height: 400px; 
+}
+
+.buttonStandard-2 {
+  margin-left: 8px;
+  background-color: #072AC8;
+  color:  #f2f4fc;
+  padding: 10px 20px;
+  width: 140px;
+  height: 60px;
+  cursor: pointer;
+  box-shadow: none;
+  outline: none;
+  border-style: none
+}
+
+.subscribeButton input {
+  background-color: #f2f4fc;
+  width: 350px;
+  height: 60px;
+  padding-left: 15px;
+}
+/*  */
+.sectionFooter {
+  margin: 30px 120px;
+  margin-top: 14%;
+  width: 80%;
+  height: 300px;
+ }
+
+ .containerFooter-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+ .linksFooter-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  -webkit-flex-wrap: wrap;
+  
+ }
