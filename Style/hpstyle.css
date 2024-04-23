@@ -1,67 +1,89 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*,
-html,
-body {
-    box-sizing: border-box;
-    padding: 0;
-    font-family: roboto;
-}
+  *,
+  html,
+  body {
+      box-sizing: border-box;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      font-size: 24;
+      font-weight: medium;
+  }
 
-h1 {
-    font-size: 60px;
+  h1 {
+      font-size: 60;
+      font-weight: bold;
+  }
+  h2 {
+      font-size: 50;
+      font-weight: bold;
+  }
+  h3 {
+    font-size: 40;
     font-weight: bold;
-}
+  }
+  h4 {
+    font-size: 24;
+    font-weight: bold;
+  }
 
-body {
-  background-color: #F2F4FC;
-}
 
-header {
-  margin: 30px 120px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+  body {
+    background-color: #F2F4FC;
+  }
 
-.ul-flex {
-  width: 500px;
-  display: flex;
-  justify-content: space-evenly;
-  list-style: none;
-  align-content: center;
-}
-
-.buttonStandard {
-background-color: #072AC8;
-color:  #f2f4fc;
-padding: 10px 20px;
-width: 120px;
-height: 40px;
-cursor: pointer;
-box-shadow: none;
-outline: none;
-border-style: none
-}
-
-.sectionHero {
+  header {
+    width: 80%;
     margin: 30px 120px;
-}
-
-.containerHero-flex {
     display: flex;
-    width: 76.4%;
-    height:max-content;
-    align-items:center;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-}
-.heroText, .heroImages {
+  .ul-flex {
+    width: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-content: center;
+  }
+
+  .buttonStandard {
+    background-color: #072AC8;
+    color:  #f2f4fc;
+    padding: 10px 20px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    border-style: none
+  }
+
+  .sectionHero {
+      margin: 30px 120px;
+      width: 80%;
+  }
+
+  .containerHero-flex {
+      display: flex;
+      width: 100%;
+      height:max-content;
+      align-items:center;
+      justify-content: space-between;
+
+  }
+
+  .heroText {
+      width: 40%;
+  }
+
+  .heroImages {
     width: 50%;
-}
+  }
 
-.heroImagesBackground {
+  .heroImagesBackground {
     position: relative;
     background-image: url("/Resources/hero-section/hero-image.png");
     background-size: contain; 
@@ -69,7 +91,11 @@ border-style: none
     background-position: center; 
     height: 520px;
     width: 420px;
-}
+  }
+
+  .heroText :nth-child(4) {
+    margin-left: 25px;
+  }
 
 .heroImages img {
     width: 62%;
@@ -79,28 +105,298 @@ border-style: none
 
 .heroImages img.creditImg {
     position: absolute;
-    top: 30px;
-    left: -60px;
+    top: 3%;
+    left: -15%;
   }
   
   .heroImages img.emojiImg {
     position: absolute;
-    bottom: -39px;
-    right: -55px;
+    bottom: -14%;
+    right: -15%;
   }
 
   .clientsBar {
+    width: 80%;
     margin: 30px 120px;
-
+    margin-top: 7%;
   }
-  .flexClients {
-    display: flex;
-    justify-content: space-around;
 
+  .containerClients-flex {
+    display: flex;
+    justify-content: space-between;
   }
 
   .clientsBar img {
-    filter: grayscale(100%);
-    
-
+    filter: grayscale(100%); 
   }
+
+  .sectionProjects {
+    margin: 30px 120px;
+    margin-top: 14%;
+    width: 80%
+  }
+
+  .containerPojects-flex {
+    display: flex;
+    width: 100%;
+    height:max-content;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  .simplify, .dashcoin, .vectorify {
+    position: relative;
+    background-color: white;
+    width: 260px;
+    height: 350px;
+    box-shadow: inset;
+  }
+  .simplify {
+    background-image: url(/Resources/projects-section/1.jpg);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: top; 
+
+  
+  }
+  .dashcoin {
+    background-image: url(/Resources/projects-section/2.jpg);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: top; 
+    
+  }
+  .vectorify{
+    background-image: url(/Resources/projects-section/3.jpg);
+    background-size: 114.5%; 
+    background-repeat: no-repeat; 
+    background-position: top; 
+  }
+
+  .simplify h4,
+  .dashcoin h4,
+  .vectorify h4 {
+    position: absolute;
+    top: 55%; 
+    transform: translateY(-50%); /* ajuste posición con respecto al eje y para que el bloque esté centrado */
+    left: 20px;
+  }
+  
+  .simplify p,
+  .dashcoin p,
+  .vectorify p {
+    font-size: 20;
+    position: absolute;
+    top: 65%; 
+    transform: translateY(-50%); /* ajuste posición con respecto al eje y para que el bloque esté centrado */
+    left: 20px;
+    
+  }
+
+  .simplify a,
+  .dashcoin a,
+  .vectorify a {
+    position: absolute;
+    bottom: 8%; 
+    left: 20px;
+  }
+  
+  .testimonial {
+    margin-top: 12%;
+    margin-left: 2.5%;  /* aqui hay que revisar esto, yo deberia poder centrar todo esta seciton y tengo que hacer un ajuste en el margen */
+    width: 95%;
+    background-color: #292E47;
+    background-image: url(../Resources/testimonial-section/orbit.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+    justify-content: center;
+    
+  }
+
+  .emoji-1,
+  .emoji-2,
+  .emoji-3,
+  .emoji-4 {
+    width: 120px;
+  }
+
+  .emoji-1 {
+    position: absolute;
+    top: 40px; 
+    left: 40px;
+  }
+
+  .emoji-2 {
+    position: absolute;
+    top: 40px; 
+    right: 40px;
+  }
+
+  .emoji-3 {
+    position: absolute;
+    bottom: 40px; 
+    left: 40px
+  }
+
+  .emoji-4 {
+    position: absolute;
+    bottom: 40px; 
+    right: 40px;
+  }
+
+  .testimonialCenter-flex {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    justify-content: space-evenly;
+  }
+  
+  .testimonial h2 {
+    color: #F2F4FC;
+  }
+  
+  .testimonial p {
+    color: #ffc600;
+  }
+
+  .testimonialProfile img {
+    width: 50px;
+    height: 45px;
+    border-radius: 50%;
+  }
+
+  .testimonialProfile {
+    display: flex;
+    align-items: center;
+  }
+
+  .testimonialProfile p {
+    margin: 5px 0;
+  }
+
+  .testimonialProfile img {
+    margin-right: 10px;
+  }
+
+  .testimonialProfile p:first-child{
+   color: #A2D6F9;
+  }
+  
+  .testimonialProfile p:nth-child(2){
+    color: #F2F4FC;
+   }
+
+   .sectionServices {
+    margin: 30px 120px;
+    margin-top: 14%;
+    width: 80%
+   }
+
+   .containerServices-flex {
+    display: flex;
+    width: 100%;
+    height:max-content;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 5%;
+  }
+
+  .ui, .ux, .ad {
+    position: relative;
+    background-color: white;
+    width: 260px;
+    height: 315px;
+    box-shadow: inset;
+  }
+
+  .ui h4,
+  .ux h4,
+  .ad h4 {
+    position: absolute;
+    top: 35%; 
+    transform: translateY(-50%); 
+    left: 20px;
+  }
+  
+  .ui p,
+  .ux p,
+  .ad p {
+    font-size: 20;
+    position: absolute;
+    top: 55%; 
+    transform: translateY(-50%);
+    left: 20px;
+  }
+
+  .ui a,
+  .ux a,
+  .ad a {
+    position: absolute;
+    bottom: 8%; 
+    left: 20px;
+  }
+
+  /* falta importar imagenes */
+
+  .sectionSubscribe {
+    margin-top: 12%;
+    margin-left: 2.5%;  /* aqui hay que revisar esto, yo deberia poder centrar todo esta seciton y tengo que hacer un ajuste en el margen */
+    width: 95%;
+    background-color: #ffc600;
+    height: 400px;
+    justify-content: center;
+  }
+
+  .containerSubscribe-flex {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 400px; 
+  }
+
+  .buttonStandard-2 {
+    margin-left: 8px;
+    background-color: #072AC8;
+    color:  #f2f4fc;
+    padding: 10px 20px;
+    width: 140px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: none;
+    outline: none;
+    border-style: none
+  }
+  
+  .subscribeButton input {
+    background-color: #f2f4fc;
+    width: 350px;
+    height: 60px;
+    padding-left: 15px;
+  }
+  
+  .sectionFooter {
+    margin: 30px 120px;
+    margin-top: 14%;
+    width: 80%;
+    height: 300px;
+   }
+
+   .containerFooter-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   .linksFooter-flex {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    flex-wrap: wrap;
+   }
+
+   
