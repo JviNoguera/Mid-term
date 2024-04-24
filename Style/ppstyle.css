@@ -3,34 +3,38 @@
 *,
 html,
 body {
-    box-sizing: border-box;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 24;
-    font-weight: medium;
+  box-sizing: border-box;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: medium;
 }
-
-h1 {
-    font-size: 60px;
-    font-weight: bold;
-}
-h2 {
-    font-size: 50;
-    font-weight: bold;
-}
-h3 {
-  font-size: 40;
-  font-weight: bold;
-}
-h4 {
-  font-size: 24;
-  font-weight: bold;
-}
-
-
 body {
   background-color: #F2F4FC;
 }
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #292E47;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Header */
 
 header {
   width: 80%;
@@ -38,6 +42,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: #6B708D;
 }
 
 .ul-flex {
@@ -59,8 +64,51 @@ header {
   outline: none;
   border-style: none
 }
+/* Simplify */
 
-/* arriba poner seccion anterior */
+.sectionSimplify {
+  margin: 30px 120px;
+  margin-top: 14%;
+  width: 80%
+}
+
+#image-Pdata{
+  margin-top: 5%;
+  width: 100%;
+  height: 350px;
+}
+
+#content-Pdata {
+  margin-top: 4%;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #6B708D;
+}
+
+#description-Pdata{
+  font-size: 24px;
+  color: #6B708D;
+}
+
+#compleated-Pdata {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.containerSimplify-flex {
+  display: flex;
+  align-items: center; 
+}
+
+.containerSimplify-flex p {
+  margin-right: auto; /* con esto logro mover el párrafo totalmente a la izquierda */
+}
+
+.containerSimplify-flex span {
+  margin-left: 5px;
+}
+
+/* Other Projects */
 
 .sectionOtherProjects {
   margin: 30px 120px;
@@ -86,7 +134,7 @@ header {
 }
 .orbit {
   background-image: url(/Resources/projects-section/4.jpg);
-  background-size: 111%; 
+  background-size: 114%; 
   background-repeat: no-repeat; 
   background-position: top; 
 
@@ -120,7 +168,7 @@ header {
 .cryptopie p {
   font-size: 20;
   position: absolute;
-  top: 65%; 
+  top: 70%; 
   transform: translateY(-50%); /* ajuste posición con respecto al eje y para que el bloque esté centrado */
   left: 20px;
 }
@@ -132,7 +180,8 @@ header {
   bottom: 8%; 
   left: 20px;
 }
-/*  */
+/*  Subscribe Form */
+
 .sectionSubscribe {
   margin-top: 12%;
   margin-left: 2.5%;  /* aqui hay que revisar esto, yo deberia poder centrar todo esta seciton y tengo que hacer un ajuste en el margen */
@@ -169,25 +218,36 @@ header {
   height: 60px;
   padding-left: 15px;
 }
-/*  */
+
+/* footer */
+
+
 .sectionFooter {
   margin: 30px 120px;
   margin-top: 14%;
   width: 80%;
-  height: 300px;
- }
+  height: 100px;
+}
 
- .containerFooter-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
- }
+.sectionFooter img {
+  height: 30px;
+}
 
- .linksFooter-flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  -webkit-flex-wrap: wrap;
-  
- }
+.containerFooter-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.linksFooter-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.linksFooter-flex li {
+    list-style: none;
+    flex: 0 32%;
+    height: 60px;
+}

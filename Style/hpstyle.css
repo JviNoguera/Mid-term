@@ -8,24 +8,24 @@
       padding: 0;
       font-family: 'Roboto', sans-serif;
       font-size: 24;
-      font-weight: medium;
+      font-weight: lighter;
   }
 
   h1 {
-      font-size: 60px;
+      font-size: 40px;
       font-weight: bold;
   }
   h2 {
-      font-size: 50;
+      font-size: 32px;
       font-weight: bold;
   }
   h3 {
-    font-size: 40;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: normal;
   }
   h4 {
-    font-size: 24;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
   }
 
 
@@ -188,7 +188,7 @@
   .vectorify p {
     font-size: 20;
     position: absolute;
-    top: 65%; 
+    top: 70%; 
     transform: translateY(-50%); /* ajuste posición con respecto al eje y para que el bloque esté centrado */
     left: 20px;
     
@@ -202,6 +202,8 @@
     left: 20px;
   }
   
+  /* Testimonial */
+
   .testimonial {
     margin-top: 12%;
     margin-left: 2.5%;  /* aqui hay que revisar esto, yo deberia poder centrar todo esta seciton y tengo que hacer un ajuste en el margen */
@@ -212,8 +214,6 @@
     background-repeat: no-repeat;
     height: 500px;
     position: relative;
-    justify-content: center;
-    
   }
 
   .emoji-1,
@@ -290,12 +290,28 @@
   .testimonialProfile p:nth-child(2){
     color: #F2F4FC;
    }
-
+   
+   /* Services */
+   
    .sectionServices {
     margin: 30px 120px;
     margin-top: 14%;
     width: 80%
    }
+
+   .serviceImage {
+    background-color: #ECF7FF;
+    border-radius: 50%;
+    margin: 20px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    
+  }
+  
+  .serviceImage img {
+    background-color: #ECF7FF;
+  }
 
    .containerServices-flex {
     display: flex;
@@ -318,9 +334,10 @@
   .ux h4,
   .ad h4 {
     position: absolute;
-    top: 35%; 
+    top: 40%; 
     transform: translateY(-50%); 
     left: 20px;
+    margin-top: 0;
   }
   
   .ui p,
@@ -331,6 +348,8 @@
     top: 55%; 
     transform: translateY(-50%);
     left: 20px;
+    right: 20px;
+    text-align: justify;
   }
 
   .ui a,
@@ -341,7 +360,7 @@
     left: 20px;
   }
 
-  /* falta importar imagenes */
+ /* Subscribe Form */
 
   .sectionSubscribe {
     margin-top: 12%;
@@ -380,23 +399,35 @@
     padding-left: 15px;
   }
   
-  .sectionFooter {
-    margin: 30px 120px;
-    margin-top: 14%;
-    width: 80%;
-    height: 300px;
-   }
+ /* footer */
 
-   .containerFooter-flex {
+.sectionFooter {
+  margin: 30px 120px;
+  margin-top: 14%;
+  width: 80%;
+  height: 100px;
+}
+
+.sectionFooter img {
+  height: 30px;
+}
+
+.containerFooter-flex {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-   }
-   .linksFooter-flex {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    flex-wrap: wrap;
-   }
+    height: 100%;
+}
 
+.linksFooter-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.linksFooter-flex li {
+    list-style: none;
+    flex: 0 32%;
+    height: 60px;
+}
    
