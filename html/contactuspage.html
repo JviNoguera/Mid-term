@@ -18,6 +18,36 @@
     </nav>
     <button class="buttonStandard">Contact Us</button>
   </header>
+  <form action="" id="Form" class="sectionForm">
+    <h1>Contact Us</h1>
+    <div>
+      <label for="fullName">Full Name *</label><br>
+      <input id="fullname" type="text" placeholder="Enter you full name">
+      <p id="nameErr"></p>
+    </div>
+    <div class="email-phone">
+      <div class="containerEmailPhone-flex">
+        <div>
+          <label for="email">Email</label><br>
+          <input id="email" type="email" placeholder="Enter you email address">
+          <p id="emailErr"></p>
+        </div>
+        <div>
+          <label for="phone">Phone</label><br>
+          <input id="phone" type="text" placeholder="Enter your phone number">
+          <p id="phoneErr"></p>
+        </div>
+      </div>
+    </div>
+    <div class="message">
+      <label for="message">Message</label><br>
+      <textarea class="message" id="message" cols="30" rows="10" placeholder="Write your message here..."></textarea>
+      <p id="messageErr"></p>
+    </div>
+    <div class="submitButtonDiv">
+      <button class="submitButton" type="submit">submit</button>
+    </div>
+  </form>
   <article class="sectionFooter">
     <section class="containerFooter-flex">
         <div>
@@ -35,7 +65,7 @@
             </ul>
         </div>
     </section>
-</article>
+  </article>
     <script src="/javascript/cujs.js"></script>
 </body>
 </html>
