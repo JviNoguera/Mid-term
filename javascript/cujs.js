@@ -8,15 +8,9 @@ function validateName() {
         console.log(e);  
         return false; /*condicion para poder ejecutar la funcion de validar el formulario */
     } else 
-        return True
+        return true
 
 }
-
-// document.getElementById("Form").addEventListener('submit', (event) => {
-//     event.preventDefault();
-//     validateName();
-//     console.log(event);
-// })
 
 function validateEmail() {
     
@@ -27,14 +21,8 @@ function validateEmail() {
         console.log(e);
         return false;
     } else 
-        return True
+        return true
 }
-
-// document.getElementById("Form").addEventListener('submit', (event) => {
-//     event.preventDefault();
-//     validateEmail();
-//     console.log(event);
-// })
 
 function validatePhone() {
     
@@ -45,15 +33,9 @@ function validatePhone() {
         console.log(e);
         return false;
     } else 
-        return True  
+        return true  
     
 }
-
-// document.getElementById("Form").addEventListener('submit', (event) => {
-//     event.preventDefault();
-//     validatePhone();
-//     console.log(event);
-// })
 
 function validateMessage() {
     
@@ -64,15 +46,9 @@ function validateMessage() {
         console.log(e);
         return false;
     } else 
-        return True  
+        return true  
   
 }
-
-// document.getElementById("Form").addEventListener('submit', (event) => {
-//     event.preventDefault();
-//     validateMessage();
-//     console.log(event);
-// })
 
 function validateForm () {
 
@@ -86,7 +62,8 @@ function validateForm () {
 
 document.getElementById("Form").addEventListener('submit', (event) => {
   
+    event.preventDefault(); /*Esto debe ir antes del if para no refrescar la página*/
     if (!validateForm()) { 
-        event.preventDefault();
+     
     }
 });
