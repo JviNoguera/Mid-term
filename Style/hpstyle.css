@@ -1,6 +1,10 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+  :root {
+    --colorbackform: rgba(107, 112, 141, 0.1); /* this color === #6B7A8D 10% */
+  }
+
   *,
   html,
   body {
@@ -8,16 +12,18 @@
       padding: 0;
       font-family: 'Roboto', sans-serif;
       font-size: 24;
-      font-weight: lighter;
+      font-weight: medium;
   }
 
   h1 {
       font-size: 40px;
       font-weight: bold;
+      color: #292E47;
   }
   h2 {
       font-size: 32px;
       font-weight: bold;
+      color: #292E47;
   }
   h3 {
     font-size: 24px;
@@ -28,10 +34,12 @@
     font-weight: 500;
   }
 
-
   body {
     background-color: #F2F4FC;
+    color: #292E47;
   }
+
+  /* Form */
 
   header {
     width: 80%;
@@ -61,6 +69,8 @@
     border-style: none
   }
 
+  /* Hero */
+
   .sectionHero {
       margin: 30px 120px;
       width: 80%;
@@ -72,7 +82,6 @@
       height:max-content;
       align-items:center;
       justify-content: space-between;
-
   }
 
   .heroText {
@@ -115,6 +124,8 @@
     right: -15%;
   }
 
+  /* Clients Bar */
+
   .clientsBar {
     width: 80%;
     margin: 30px 120px;
@@ -129,7 +140,9 @@
   .clientsBar img {
     filter: grayscale(100%); 
   }
-
+  
+  /* Projects Index */
+  
   .sectionProjects {
     margin: 30px 120px;
     margin-top: 14%;
@@ -152,21 +165,21 @@
     height: 350px;
     box-shadow: inset;
   }
+
   .simplify {
     background-image: url(/Resources/projects-section/1.jpg);
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: top; 
-
-  
   }
+
   .dashcoin {
     background-image: url(/Resources/projects-section/2.jpg);
     background-size: contain; 
     background-repeat: no-repeat; 
     background-position: top; 
-    
   }
+
   .vectorify{
     background-image: url(/Resources/projects-section/3.jpg);
     background-size: 114.5%; 
@@ -191,7 +204,6 @@
     top: 70%; 
     transform: translateY(-50%); /* ajuste posición con respecto al eje y para que el bloque esté centrado */
     left: 20px;
-    
   }
 
   .simplify a,
@@ -256,12 +268,13 @@
     justify-content: space-evenly;
   }
   
-  .testimonial h2 {
+  .testimonial h1 {
     color: #F2F4FC;
   }
   
-  .testimonial p {
+  .testimonial h3 {
     color: #ffc600;
+    text-align: center;
   }
 
   .testimonialProfile img {
@@ -306,7 +319,6 @@
     width: 60px;
     height: 60px;
     padding: 10px;
-    
   }
   
   .serviceImage img {
@@ -371,6 +383,11 @@
     justify-content: center;
   }
 
+  .sectionSubscribe h4 {
+    margin-top: -1%;
+
+  }
+
   .containerSubscribe-flex {
     display: flex;
     flex-direction: column; 
@@ -431,3 +448,171 @@
     height: 60px;
 }
    
+@media (max-width: 748px){ /* Responsive Ipad Mini */
+
+  /* Responsive header */
+
+  header {
+    width: 80%;
+    margin-left: 10%;
+  }
+  header img{
+    display: none;
+  }
+  .ul-flex {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .ul-flex li {
+    margin-right: 60%;
+  }
+  header .buttonStandard {
+    font-size: 10px;
+    margin-left: -9%;
+    width: 120px;
+  }
+
+  /* Responsive Hero Section*/
+
+  .sectionHero {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -20%;
+  }
+  .heroText{
+    width: 120%;
+  }
+
+  .heroText h1 {
+    font-size: 25px;
+  }
+
+  .heroText p {
+    font-size: 16px;
+  }
+  
+  .creditImg,
+  .emojiImg {
+    display: none;
+  }
+
+  .heroImagesBackground {
+    width: 50%;
+  }
+
+  .clientsBar {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: -15%;
+  }
+
+  .containerClients-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+.clientsBar :nth-child(4) {
+    display: none;
+  }
+
+  /* Responsive Projects */
+
+  .sectionProjects{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  .sectionProjects h2 {
+    text-align: center; 
+    margin: 0 auto;
+  }
+
+  .containerPojects-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .containerPojects-flex div {
+    margin-bottom: 30px;
+  }
+
+  /* Responsive Testimonial */
+
+  .testimonial {
+    height: 350px;
+    margin-top: 5%;
+  }
+
+.emoji-1,
+.emoji-2,
+.emoji-3,
+.emoji-4 {
+  display: none;
+}
+
+.testimonialCenter-flex{
+  height: 350px;
+}
+
+.testimonialCenter-flex h1{
+  font-size: 30px;
+}
+
+.testimonialCenter-flex h3{
+  font-size: 20px;
+}
+
+ /* Responsive Services */
+
+ .sectionServices{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+.sectionServices h2 {
+  text-align: center; 
+  margin: 0 auto;
+}
+
+.containerServices-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.containerServices-flex div{
+  margin-bottom: 30px;
+}
+
+  /* Responsive Testimonial */
+
+.sectionSubscribe {
+  height: 300px;
+  margin-top: 5%;
+}
+
+.containerSubscribe-flex {
+  height: 300px;
+}
+
+.containerSubscribe-flex h2{
+  font-size: 25px;
+}
+
+.containerSubscribe-flex h4{
+  font-size: 17px;
+}
+
+ /* Responsive Footer */
+
+.sectionFooter {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.sectionFooter p{
+ font-size: 8px;
+}
+}
